@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Stelvio Grotesk Regular';
+    src: url('../fonts/StelvioGroteskRegular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+
+:root {
+    --main-font: 'Stelvio Grotesk Regular';
+    --secondary-font: 'Stelvio Grotesk Regular';
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, h6 {
+    font-family: var(--main-font);
+    color: rgb(26, 26, 26);
+    line-height: 1.3;
+    font-weight:300;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p{
+    font-family: var(--secondary-font);
+    line-height: 1.3;
+    font-size: 1.4em;
+    visibility: hidden;
+    color:#3b3b3b;
+}
+
+
+.hero {
+    width: 100vw;
+    overflow: hidden; /* To hide portion of image while scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+}
+
+.inner {
+    max-width:570px;  
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    align-self: flex-end;
+}
+.row {
+    height: 60px;
+    margin-bottom:16px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.number {
+    color: rgb(26, 26, 26);
+    font-size: 1em;
+    align-self: start;
+    margin-right: 18px;
+    visibility: hidden;
+}
+
+.name {
+    color: rgb(26, 26, 26);
+    font-size: 1.5em;
+    visibility: hidden;
+}
+
+
+
+.status {
+    color: rgb(26, 26, 26);
+    font-size: 1.2em;
+    visibility: hidden;
+
+}
+
+.initial-space {
+    margin-top:24vh;
+}
+
+.header {
+    visibility: hidden;
+    color: #252525;
+    font-size: 2.5em;
+    line-height: 1.1em;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.parentClass {
+    overflow: hidden;
+}
+
+.h-h1 {
+    z-index: 2;
+    font-size: 8vw;
+    line-height: 10vw;
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+
+
+.case-container {
+    height: 400px;
+    width:800px;
+    background-color: white;
+    color: white;
+    position: relative; /* So that the image is absolute */
+    overflow: hidden; /* To hide portion of image while scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 600px;
+    
+}
+
+.case-wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.case-img{
+    background-position: 150% 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.text-light {
+    color: white;
+}
+
+.gradient {
+    color: #e50010;
+}
+
+@media only screen and (max-device-width: 480px) {
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .initial-space {
+        margin-top:18vh;
+    }
+
+    .header {
+        line-height: 1.1em;
+        font-size: 2em;
+        margin-bottom: 24px;
+    }
+
+    .paragraph {
+        font-size: 1.3em;
+    }
+}
+
